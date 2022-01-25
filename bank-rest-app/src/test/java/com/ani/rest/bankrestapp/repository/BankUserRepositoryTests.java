@@ -31,7 +31,7 @@ public class BankUserRepositoryTests {
     void testCreateNewUser(){
         BankUser ip = new BankUser(
                 1L,
-                "pqr",
+                "abc",
                 "1234",
                 LocalDate.of(2021, 1, 1)
         );
