@@ -78,13 +78,14 @@ public class BankUserRestApiTests {
     @DisplayName("REST - Account Number Api")
     @Test
     void testAccountNumber() {
-        String url = "http://localhost:"+port+"/user";
-
-        BankUser[] users = template.exchange(
+        String url = "http://localhost:"+port+"/user/number/123";
+        ResponseEntity<List<BankUser>> entity = template.exchange(
                 url,
                 HttpMethod.GET,
-                BankUser[].class
+                null, // request body pass as null
+                new ParameterizedTypeReference<List<BankUser>>() {}
         );
+        Assertions.assertEquals(HttpStatus.OK, entity.getStatusCode());
     }
 }
 
