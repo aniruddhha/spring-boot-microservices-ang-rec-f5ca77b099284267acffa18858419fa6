@@ -8,7 +8,7 @@
 - Total deposit amount for given account on given date
 - Total transferred amount for given account between given dates
 - Show all the bank accounts, having balance above 10000
-- Show transactions amount type wise, for given account number
+- Show transactions amount type wise, for given account number 
   - Withdraw : 10000
   - Deposit : 100000
   - Transfer : 8000
