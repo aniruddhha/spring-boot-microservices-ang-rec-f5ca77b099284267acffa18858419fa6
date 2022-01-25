@@ -41,4 +41,14 @@ public class BankUserServiceImpl implements BankUserService {
     public int updateUserName(Long id, String newName) {
         return repository.updateNamesdfljslgjskhgksdfh(id, newName);
     }
+
+    // money transfer
+    // src, tag, amt
+    // begin
+    // source num is available or not -> select
+    // target num is available or not -> select
+    // roll back
+    // deducting amount from source -> update
+    // adding amount to target -> update
+    // commit
 }

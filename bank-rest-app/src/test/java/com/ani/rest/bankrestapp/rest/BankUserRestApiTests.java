@@ -83,7 +83,7 @@ public class BankUserRestApiTests {
                 url,
                 HttpMethod.GET,
                 null, // request body pass as null
-                new ParameterizedTypeReference<List<BankUser>>() {}
+                new ParameterizedTypeReference<List<BankUser>>() {} // anonymous inner class
         );
         Assertions.assertEquals(HttpStatus.OK, entity.getStatusCode());
     }
