@@ -17,7 +17,7 @@ public class BankAccountController {
     @Autowired
     private BankAccountService service;
 
-    @PostMapping
+    @PostMapping // POST -> http://localhost:8080/bank/
     public ResponseEntity<AppRes<Integer>> createBankAccount(@RequestBody BankAccountDto dto) {
 
         int op = service.createNewAccount(dto);
