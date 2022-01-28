@@ -1,0 +1,17 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: api-gateway
+
+zuul:
+  prefix: /api
+  routes:
+    abc:
+      path: /abc/**
+      serviceId: abc
+    pqr:
+      path: /pqr/**
+      serviceId: pqr
+
