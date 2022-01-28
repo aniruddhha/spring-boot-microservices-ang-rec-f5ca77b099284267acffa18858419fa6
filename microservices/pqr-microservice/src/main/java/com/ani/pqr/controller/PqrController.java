@@ -19,7 +19,7 @@ public class PqrController {
 
     @GetMapping("/abc")
     public ResponseEntity<String> callAbc() {
-        ResponseEntity<String> res = template.getForEntity("http://ABC/", String.class);
+        ResponseEntity<String> res = template.getForEntity("lb://ABC/", String.class);
         return res;
     }
 }
